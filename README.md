@@ -104,3 +104,7 @@ myfolder
 
 1 directory, 10 files
 ```
+
+### Example Project
+
+Available here [https://github.com/richardvanhook/grunt-salesforce-meta-xml-example](https://github.com/richardvanhook/grunt-salesforce-meta-xml-example)
