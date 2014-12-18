@@ -1,7 +1,7 @@
 {
   "name": "grunt-salesforce-meta-xml",
   "description": "Dynamically generates accompanying metadata files for salesforce metadata.  Should be used in conjunction with grunt-ant-sfdc.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/richardvanhook/grunt-salesforce-meta-xml",
   "author": {
     "name": "Richard Vanhook",

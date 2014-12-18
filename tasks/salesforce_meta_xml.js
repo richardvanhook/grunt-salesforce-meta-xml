@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       magic     = new Magic(mmm.MAGIC_MIME_TYPE);
 
   var DEFAULT_API_VERSION = '32.0';
-  var METADATA_DB_PATH = 'lib/types.json';
+  var METADATA_DB_PATH = '../lib/types.json';
 
   var template = _.template(
     '<?xml version="1.0" encoding="UTF-8"?>\n'+
@@ -60,8 +60,8 @@ module.exports = function(grunt) {
     'Should be used in conjunction with grunt-ant-sfdc.',
 
     function() {
+      var allMeta = require(METADATA_DB_PATH);
       //load exhaustive and user defined metadata types
-      var allMeta = grunt.file.readJSON(METADATA_DB_PATH);
       debug('Loaded %s metadata types from %s', chalk.cyan(_.size(allMeta)), METADATA_DB_PATH);
       //save case sensitive xmlName for later use
       _.each(_.keys(allMeta),function(key){allMeta[key].xmlName = key;});
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
       function process() {
         if(filesSrc.length <= 0) {
           done();
-          grunt.log.writeln('Created ' + created.length + ' file'
+          grunt.log.writeln('Created ' + chalk.cyan(created.length) + ' file'
             + (created.length === 1 ? '' : 's'));
           if(created.length > 0)
             grunt.verbose.writeln(chalk.yellow(created.join('\n')));
