@@ -1,20 +1,23 @@
 {
   "name": "grunt-salesforce-meta-xml",
-  "description": "Dynamically generates -meta.xml files for salesforce metadata.  Should be used in conjunction with grunt-ant-sfdc.",
-  "version": "0.1.0",
-  "homepage": "",
+  "description": "Dynamically generates accompanying metadata files for salesforce metadata.  Should be used in conjunction with grunt-ant-sfdc.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/richardvanhook/grunt-salesforce-meta-xml",
   "author": {
     "name": "Richard Vanhook",
     "email": "richard.vanhook@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "\u001b[D\u001b[C\u001b[A\u001b[A\u001b[A\u001b[B\u001b[B\u001b[B"
+    "url": "git://github.com/richardvanhook/grunt-salesforce-meta-xml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richardvanhook/grunt-salesforce-meta-xml/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "/blob/master/LICENSE-MIT"
+      "url": "https://github.com/richardvanhook/grunt-salesforce-meta-xml/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -36,7 +39,7 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin","salesforce"
   ],
   "dependencies": {
     "lodash": "^2.4.1",
