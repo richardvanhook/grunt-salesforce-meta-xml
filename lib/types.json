@@ -1,0 +1,306 @@
+{
+    "ApexClass": {
+        "attributes": [
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "default": "Active",
+                "name": "status",
+                "type": "string"
+            },
+            {
+                "default": "<%= apiVersion %>",
+                "name": "apiVersion",
+                "type": "double"
+            }
+        ],
+        "pattern": "**/classes/*.cls"
+    },
+    "ApexComponent": {
+        "attributes": [
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "apiVersion",
+                "type": "double"
+            },
+            {
+                "name": "description",
+                "type": "string"
+            },
+            {
+                "default": "<%= name %>",
+                "name": "label",
+                "type": "string"
+            }
+        ],
+        "pattern": "**/components/*.component"
+    },
+    "ApexPage": {
+        "attributes": [
+            {
+                "default": "<%= apiVersion %>",
+                "name": "apiVersion",
+                "type": "double"
+            },
+            {
+                "name": "availableInTouch",
+                "type": "boolean"
+            },
+            {
+                "name": "confirmationTokenRequired",
+                "type": "boolean"
+            },
+            {
+                "name": "description",
+                "type": "string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "default": "<%= name %>",
+                "name": "label",
+                "type": "string"
+            }
+        ],
+        "pattern": "**/pages/*.page"
+    },
+    "ApexTrigger": {
+        "attributes": [
+            {
+                "default": "<%= apiVersion %>",
+                "name": "apiVersion",
+                "type": "double"
+            },
+            {
+                "default": "Active",
+                "name": "status",
+                "type": "string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            }
+        ],
+        "pattern": "**/triggers/*.trigger"
+    },
+    "DashboardFolder": {
+        "attributes": [
+            {
+                "name": "accessType",
+                "default": "Shared",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "default": "<%= name %>",
+                "type":"string"
+            },
+            {
+                "name": "publicFolderAccess",
+                "default": "ReadOnly",
+                "type":"string"
+            }
+        ],
+        "pattern": "**/dashboards/*",
+        "folder": true
+    },
+    "Document": {
+        "attributes": [
+            {
+                "name": "description",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "internalUseOnly",
+                "default":"true",
+                "type":"boolean"
+            },
+            {
+                "name": "keywords",
+                "type":"string"
+            },
+            {
+                "name": "name",
+                "type":"string"
+            },
+            {
+                "name": "public",
+                "default":"false",
+                "type":"boolean"
+            }
+        ],
+        "pattern": "**/documents/**/*"
+    },
+    "DocumentFolder": {
+        "attributes": [
+            {
+                "name": "accessType",
+                "default": "Shared",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "default": "<%= name %>",
+                "type":"string"
+            },
+            {
+                "name": "publicFolderAccess",
+                "default": "ReadOnly",
+                "type":"string"
+            }
+        ],
+        "pattern": "**/documents/*",
+        "folder": true
+    },
+    "EmailFolder": {
+        "attributes": [
+            {
+                "name": "accessType",
+                "default": "Shared",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "default": "<%= name %>",
+                "type":"string"
+            },
+            {
+                "name": "publicFolderAccess",
+                "default": "ReadOnly",
+                "type":"string"
+            }
+        ],
+        "pattern": "**/email/*",
+        "folder": true
+    },
+    "EmailTemplate":{
+        "attributes": [
+            {
+                "name": "apiVersion",
+                "type":"double"
+            },
+            {
+                "name": "attachedDocuments",
+                "type":"string"
+            },
+            {
+                "name": "available",
+                "default":"true",
+                "type":"boolean"
+            },
+            {
+                "name": "description",
+                "type":"string"
+            },
+            {
+                "name": "encodingKey",
+                "default":"UTF-8",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "letterhead",
+                "type":"string"
+            },
+            {
+                "name": "name",
+                "default":"true",
+                "type":"string"
+            },
+            {
+                "name": "style",
+                "default":"none",
+                "type":"string"
+            },
+            {
+                "name": "subject",
+                "type":"string"
+            },
+            {
+                "name": "textOnly",
+                "type":"string"
+            },
+            {
+                "name": "type",
+                "default":"text",
+                "type":"string"
+            }
+        ],
+        "pattern": "**/email/**/*.email"
+    },
+    "ReportFolder": {
+        "attributes": [
+            {
+                "name": "accessType",
+                "default": "Shared",
+                "type":"string"
+            },
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "default": "<%= name %>",
+                "type":"string"
+            },
+            {
+                "name": "publicFolderAccess",
+                "default": "ReadOnly",
+                "type":"string"
+            }
+        ],
+        "pattern": "**/reports/*",
+        "folder": true
+    },
+    "StaticResource": {
+        "attributes": [
+            {
+                "name": "fullName",
+                "type": "string"
+            },
+            {
+                "default": "Public",
+                "name": "cacheControl",
+                "type": "string"
+            },
+            {
+                "default": "<%= mimetype %>",
+                "name": "contentType",
+                "type": "string"
+            },
+            {
+                "name": "description",
+                "type": "string"
+            }
+        ],
+        "pattern": "**/staticresources/*.resource",
+        "needsMimeType": true
+    }
+}
