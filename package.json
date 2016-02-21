@@ -36,10 +36,11 @@
     "load-grunt-tasks": "^1.0.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
-    "gruntplugin","salesforce"
+    "gruntplugin",
+    "salesforce"
   ],
   "dependencies": {
     "lodash": "^2.4.1",
